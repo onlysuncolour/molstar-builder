@@ -3,6 +3,6 @@ npm run build
 yalc publish
 
 # 在example目录
-yalc add use-molstar
+yalc add molstar-builder
 npm install
 npm run dev

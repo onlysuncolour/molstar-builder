@@ -2,7 +2,7 @@
   "version": "v1",
   "packages": {
     "molstar-builder": {
-      "signature": "7d58a6e09ee97e72b62fad9258e0537f",
+      "signature": "ef769569ef41826c05fb567009a6f58a",
       "file": true
     }
   }

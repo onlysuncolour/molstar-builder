@@ -13,7 +13,8 @@
   },
   "peerDependencies": {
     "react": ">=17.0.0",
-    "react-dom": ">=17.0.0"
+    "react-dom": ">=17.0.0",
+    "molstar": "^4.6.0"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^28.0.6",
@@ -28,6 +29,7 @@
     "@types/react": "^18.2.53",
     "@types/react-dom": "^18.2.18",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "molstar": "^4.6.0"
   }
 }
