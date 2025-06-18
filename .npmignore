@@ -1,0 +1,9 @@
+# 忽略示例项目和其他无关文件
+example/
+src/
+rollup.config.js
+tsconfig.json
+*.tsbuildinfo
+
+# 仅保留dist和package.json（或根据需求调整）
+!dist/
