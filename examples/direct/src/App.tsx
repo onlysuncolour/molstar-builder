@@ -1,11 +1,18 @@
+import { MolstarContext, useMolstarContext } from './molstarBuilder';
+import { useRef } from "react";
 import "./App.css"
-import { useMolstar, Test } from '../../../src/index';
+import ProteinList from './components/protein-list';
 
 function App() {
-  const [value, setValue] = useMolstar('demo');
-  return <div>Current value: {value}
-  <Test />
-  </div>;
+  const viewContainerRef = useRef<HTMLDivElement>(null);
+  const molstarContext = useMolstarContext({ viewContainerRef })
+  
+  return <div className="app">
+    <MolstarContext.Provider value={molstarContext}>
+      <div style={{ display: 'none' }} ref={viewContainerRef}></div>
+      <ProteinList />
+    </MolstarContext.Provider>
+  </div>
 }
 
 export default App;

@@ -1,5 +1,5 @@
-import { formatFloat, getUniqueNameFromArr } from "../../utils";
-import { TMolstarPlugin, TModelEntity, TStructure } from "../../interface";
+import { formatFloat, getUniqueNameFromArr } from "./utils";
+import { TMolstarPlugin, TModelEntity, TStructure } from "./interface";
 
 export default async function splitStructure(structure:TStructure, modelEntities: TModelEntity[], label: string, plugin: TMolstarPlugin) {
 

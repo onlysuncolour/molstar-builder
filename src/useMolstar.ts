@@ -49,7 +49,7 @@ visibleProteins: string[]
 
 export const MolstarContext = React.createContext<TMolstarContext | undefined>(undefined)
 
-export function useGetMolstarContext({
+export function useMolstarContext({
   viewContainerRef,
 }: { viewContainerRef: RefObject<HTMLDivElement> }): TMolstarContext {
   const { molstarPlugin } = useCreatePluginUI(viewContainerRef)
