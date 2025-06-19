@@ -1,0 +1,9 @@
+{
+  "version": "v1",
+  "packages": {
+    "molstar-builder": {
+      "signature": "ef769569ef41826c05fb567009a6f58a",
+      "file": true
+    }
+  }
+}
