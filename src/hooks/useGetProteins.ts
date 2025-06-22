@@ -136,7 +136,6 @@ export default function useGetProteins({
       let filename = ""
       fetch(url).then(res => {
         const contentDisposition = res.headers.get('Content-Disposition');
-
         if (contentDisposition) {
           const filenameMatch = contentDisposition.match(/filename\*?=["']?(.*?)(["';]|$)/i);
           const _filename = filenameMatch ? filenameMatch[1] : null;
@@ -169,7 +168,7 @@ export default function useGetProteins({
 
     let result = await provider?.visuals?.(pluginLatestRef.current, parsed);
 
-    const structureKey = result[0].structure.ref;
+    const structureKey = result.structure.ref;
 
     const mosProtein: TProtein = {
       key: structureKey,

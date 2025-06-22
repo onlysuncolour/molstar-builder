@@ -1,3 +1,4 @@
+import './index.css'
 import { useContext, useRef } from "react"
 import { MolstarContext } from "../../molstarBuilder"
 
